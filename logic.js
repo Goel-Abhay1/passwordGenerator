@@ -67,7 +67,6 @@ function solution(e){
         genericLoop(everyTime, randomTime);
         randomiseArray();
         document.querySelector("[displayPassword]").value = password;
-        console.log(password + "  " + password.length);
         checkedNum=0;
         password=""
     }
