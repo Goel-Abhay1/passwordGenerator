@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/87fe39bb20.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="logic.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="upperHead">
+                <h1>PassWord Generator</h1>
+                <div>
+                    <input type="text" readonly  displayPassword>
+                    <img src="./copy.svg" alt="copy" width="20" height="20">
+                </div>
+            </div>
+            <div class="lowerHead">
+                <div password-length style="display: flex;flex-direction: row;">
+                    <span style="flex: 1;">PassWord Length</span>
+                    <span lengthCount>10</span>
+                </div>
+                <div slider >
+                    <input type="range" value="10" min="1" max="20" inputSlider></input>
+                </div>
+                <div checkboxes>
+                    <input type="checkbox" name="uppercase" id="uppercase" checked>
+                    <label for="uppercase">uppercase</label>
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                    <label for="lowercase">lowercase</label>
+                    <input type="checkbox" name="numbers" id="numbers">
+                    <label for="numbers">numbers</label>
+                    <input type="checkbox" name="symbols" id="symbols">
+                    <label for="symbols">symbols</label>
+                </div>
+                <div strength>
+                    <span>Strength</span>
+                    <div></div>
+                </div>
+                <div gen-password>
+                    <Button generatorButton>
+                        Generate Password
+                    </Button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
